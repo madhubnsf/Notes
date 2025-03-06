@@ -63,7 +63,7 @@ The attention mechanism allows the decoder to focus on specific parts of the inp
 
   \[
   ```math
-  a_i = \text{score}(q, k_i)
+  [a_i = \text{score}(q, k_i)]
   ```
   \]
 
