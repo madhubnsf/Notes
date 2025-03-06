@@ -60,12 +60,9 @@ The attention mechanism allows the decoder to focus on specific parts of the inp
 - The query \( q \) is compared with each of the encoder's keys (hidden states \( h_i \)) to compute similarity scores.
 - The comparison is often done using a dot product or another similarity function:
 
-
-  \[
   ```math
   [a_i = \text{score}(q, k_i)]
   ```
-  \]
 
 - **Scores \( a \):**
 
@@ -79,9 +76,9 @@ The attention mechanism allows the decoder to focus on specific parts of the inp
 
 - The unnormalized scores \( a \) are passed through a softmax function to obtain the attention weights \( b \):
 
-  \[
+  ```math
   b_i = \frac{e^{a_i}}{\sum_{j} e^{a_j}}
-  \]
+  ```
 
 - The attention weights sum up to 1 and represent the probability distribution over the encoder states.
 
@@ -89,9 +86,9 @@ The attention mechanism allows the decoder to focus on specific parts of the inp
 
 - The context vector \( o \) is computed as a weighted sum of the encoder's values (hidden states):
 
-  \[
+  ```math
   o = \sum_{i} b_i \times v_i
-  \]
+  ```
 
   where \( v_i \) are the encoder's values (which, in this case, are the same as the hidden states \( h_i \)).
 
