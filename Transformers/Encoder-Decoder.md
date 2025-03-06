@@ -4,7 +4,7 @@ Decoder: The decoder then takes this final hidden state (or a series of hidden s
 
 In summary, the hidden states from the encoder carry rich contextual information about the input sequence, which the decoder can leverage at each timestep to produce a coherent and accurate output sequence. This interplay between the encoder and decoder hidden states is what enables the powerful sequence-to-sequence modeling capabilities of RNN-based encoder-decoder architectures.
 
-### prompt - let us say if we have 10 examples in our dataset, so during training, does each example go throught encoder and decoder
+#### prompt - let us say if we have 10 examples in our dataset, so during training, does each example go throught encoder and decoder
 
 Yes, exactly! During training, each example in your dataset goes through both the encoder and the decoder.
 
@@ -27,7 +27,7 @@ This process is repeated for each of the 10 examples in your dataset during each
 
 In summary, each example in your dataset goes through both the encoder and the decoder, contributing to the training and refinement of the model.
 
-### Prompt - on what factors, the number of timesteps dependen, on the number of RNN units ?
+#### Prompt - on what factors, the number of timesteps dependen, on the number of RNN units ?
 
 Great question! The number of timesteps and the number of RNN units are related but depend on different factors:
 
