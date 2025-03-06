@@ -60,11 +60,10 @@ The attention mechanism allows the decoder to focus on specific parts of the inp
 - The query \( q \) is compared with each of the encoder's keys (hidden states \( h_i \)) to compute similarity scores.
 - The comparison is often done using a dot product or another similarity function:
 
-```math
+
   \[
-  a_i = \text{score}(q, k_i)
+  ```math a_i = \text{score}(q, k_i) ```
   \]
-```
 
 - **Scores \( a \):**
 
