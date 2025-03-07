@@ -51,4 +51,68 @@ The imaginary part in complex numbers is much more than a mathematical convenien
 
 ---
 
-Would you like to explore how complex numbers simplify the solution process for differential equations, or perhaps see a concrete example from electrical engineering or quantum mechanics?
+The graph of the function
+
+```math
+y = x^2 + 1
+```
+
+is a parabola that opens upward. Here are the key features to understand its shape:
+
+1. **Vertex**: The standard form of a quadratic function is
+
+   ```math
+   y = a(x - h)^2 + k,
+   ```
+
+   where \((h, k)\) is the vertex. In \(y = x^2 + 1\), we have \(a = 1\), \(h = 0\), and \(k = 1\). So, the vertex is at \((0, 1)\).
+
+2. **Axis of Symmetry**: Since the vertex is at \(x = 0\), the axis of symmetry is the vertical line \(x = 0\).
+
+3. **Y-Intercept**: Setting \(x = 0\) gives \(y = 0^2 + 1 = 1\). So, the graph crosses the y-axis at \((0, 1)\).
+
+4. **X-Intercepts**: To find the x-intercepts, we set \(y = 0\):
+
+   ```math
+   x^2 + 1 = 0 \quad \Rightarrow \quad x^2 = -1.
+   ```
+
+   There are no real solutions to this equation (only complex ones). Therefore, the graph does not cross the x-axis.
+
+5. **Shape**: Because the coefficient of \(x^2\) is positive (\(a = 1\)), the parabola opens upward. The lowest point on the graph is the vertex at \((0, 1)\), and as \(|x|\) increases, \(y\) increases without bound.
+
+### ASCII Sketch
+
+Here's a rough ASCII sketch of what the graph looks like:
+
+```
+      y
+      ↑
+  6   |           *
+      |          * *
+  5   |         *   *
+      |        *     *
+  4   |       *       *
+      |      *         *
+  3   |     *           *
+      |    *             *
+  2   |   *               *
+      |  *                 *
+  1 --+----------------------→ x
+      |          (0,1)
+      |
+```
+
+*Note*: This is a simplified representation. The actual curve is smooth with the vertex at \((0, 1)\) and no x-intercepts.
+
+### Summary
+
+- **Vertex**: \((0, 1)\)
+- **Axis of Symmetry**: \(x = 0\)
+- **Y-Intercept**: \((0, 1)\)
+- **X-Intercepts**: None (in the real number system)
+- **Opening**: Upward
+
+This upward-opening, vertically shifted parabola is a classic example of how even simple equations can create curves with distinct properties. 
+
+Would you like to see how this function is used in solving equations or perhaps explore another quadratic function in detail?
