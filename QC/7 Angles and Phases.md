@@ -35,7 +35,7 @@ Quantum states are expressed as superpositions, and a general qubit state is wri
 |\psi\rangle = \alpha |0\rangle + \beta |1\rangle,
 ```
 
-with a normalization condition \($ |\alpha|^2 + |\beta|^2 = 1 \)$. Because of a fundamental property of quantum mechanics, an overall global phase (a common factor multiplying the entire state) is physically unobservable. Therefore, we can choose a convention where one amplitude (typically \($\alpha\)$) is a positive real number. This leaves any physically meaningful phase difference to be associated with the other amplitude, \($\beta\)$.
+with a normalization condition \($ |\alpha|^2 + |\beta|^2 = 1 \)$. Because of a fundamental property of quantum mechanics, an overall global phase (a common factor multiplying the entire state) is physically unobservable. Therefore, we can choose a convention where one amplitude (typically \($\alpha\)$ ) is a positive real number. This leaves any physically meaningful phase difference to be associated with the other amplitude, \($\beta\)$.
 
 By writing the amplitudes as
 
