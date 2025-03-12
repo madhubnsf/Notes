@@ -123,13 +123,13 @@ where:
 
 Notice that the angle in the quantum state is \($\theta/2\) $. This "half-angle" parameterization is crucial.  
 - For \($|0\rangle\) $, we set \($\theta = 0\) $:  
-  ```math
-  |\psi\rangle = \cos(0) |0\rangle + e^{i\phi}\sin(0) |1\rangle = |0\rangle.
-  ```
+```math
+|\psi\rangle = \cos(0) |0\rangle + e^{i\phi}\sin(0) |1\rangle = |0\rangle.
+```
 - For \($|1\rangle\) $, we set \($\theta = \pi\) $:  
-  ```math
-  |\psi\rangle = \cos\left(\frac{\pi}{2}\right) |0\rangle + e^{i\phi}\sin\left(\frac{\pi}{2}\right) |1\rangle = e^{i\phi}|1\rangle.
-  ```
+```math
+|\psi\rangle = \cos\left(\frac{\pi}{2}\right) |0\rangle + e^{i\phi}\sin\left(\frac{\pi}{2}\right) |1\rangle = e^{i\phi}|1\rangle.
+```
 
 Since a global phase is irrelevant, \($|0\rangle\) $ and \($|1\rangle\) $ are mapped to the Bloch sphere in the following way:
 - \($|0\rangle\) $ corresponds to \($(0, 0, +1) \) $ (the North Pole) .
