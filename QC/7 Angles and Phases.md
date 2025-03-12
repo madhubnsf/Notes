@@ -116,9 +116,9 @@ Exactly. The Bloch sphere is a geometric representation of a qubit state, and it
 
 1. **Same Amplitudes with Different Azimuthal Angles:**  
    In a spherical coordinate system, two vectors can have the same "latitude" (i.e., the same polar angle, θ) but differ in their "longitude" (i.e., the azimuthal angle, φ). For the qubit state  
-   ```math
-   |\psi\rangle = \cos\left(\frac{\theta}{2}\right)|0\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|1\rangle,
-   ```
+```math
+|\psi\rangle = \cos\left(\frac{\theta}{2}\right)|0\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|1\rangle,
+```
    having the same polar angle means the probabilities of measuring \($|0\rangle\)$ versus \($|1\rangle\)$ are the same. However, if the azimuthal angle φ is different, the relative phase between the basis components is different.
 
 2. **Role of the Relative Phase \($ e^{i\phi} \)$:**  
