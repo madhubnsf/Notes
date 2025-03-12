@@ -147,13 +147,13 @@ The seeming mismatch—that orthogonal states in Hilbert space (90° by the Fubi
   For orthogonal states, \($\arccos(0)  = \pi/2\) $ (90°) .  
 - **Bloch Sphere Angle (Geometric Representation) :**  
   Through the mapping \($\theta \to \theta/2\) $ for state coefficients, the geometric vector corresponding to the state \($|\psi\rangle\) $ is  
-  ```math
-  \mathbf{r} = (\sin\theta\cos\phi,\; \sin\theta\sin\phi,\; \cos\theta) .
-  ```
+```math
+\mathbf{r} = (\sin\theta\cos\phi,\; \sin\theta\sin\phi,\; \cos\theta) .
+```
   Hence, \($|0\rangle\) $ (with \($\theta = 0\) $)  is at \($\mathbf{r} = (0,0,1) \) $, and \($|1\rangle\) $ (with \($\theta = \pi\) $)  is at \($\mathbf{r} = (0,0,-1) \) $. Their separation in \($\mathbb{R}^3\) $ is  
-  ```math
-  \cos^{-1}[(0,0,1) \cdot(0,0,-1) ] = \cos^{-1}(-1)  = \pi \quad (180^\circ) .
-  ```
+```math
+\cos^{-1}[(0,0,1) \cdot(0,0,-1) ] = \cos^{-1}(-1)  = \pi \quad (180^\circ) .
+```
 
 This doubling reflects the fact that the group of unitary operations on a qubit, SU(2) , is a double cover of the rotation group SO(3) . In simple terms, two distinct points on the Bloch sphere (separated by 180°)  actually represent quantum states that are 90° apart in the underlying Hilbert space metric.
 
@@ -257,13 +257,13 @@ The derivation of the Bloch sphere parameterization starts with the general requ
 
 Given these points:
 - One can choose a representation where the amplitude for \($|0\rangle\) $ is real and positive, written as  
-  ```math
-  \alpha = \cos\left(\frac{\theta}{2}\right) .
-  ```
+```math
+\alpha = \cos\left(\frac{\theta}{2}\right) .
+```
 - The remaining complex amplitude is expressed with a magnitude and a phase. Its magnitude must satisfy \($\sin\left(\frac{\theta}{2}\right) \) $ so that together with \($\alpha\) $ the normalization holds; its phase is arbitrary and represented by \($e^{i\phi}\) $:
-  ```math
-  \beta = e^{i\phi}\sin\left(\frac{\theta}{2}\right) .
-  ```
+```math
+\beta = e^{i\phi}\sin\left(\frac{\theta}{2}\right) .
+```
 
 4. **Link to Spherical Coordinates:**  
    Notice that now we have two free parameters, \($\theta\) $ and \($\phi\) $, which are exactly the spherical coordinates needed to specify a point on the surface of a sphere (the Bloch sphere) . The factor of \($1/2\) $ in the angles accounts for the fact that a full rotation in the state’s Hilbert space corresponds to a 360° change only when mapped appropriately onto a sphere. This mapping is deeply connected to the mathematics of the SU(2)  group (which describes qubit operations)  being a double cover of the SO(3)  rotation group.
