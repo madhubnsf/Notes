@@ -49,7 +49,7 @@ we ensure:
   The identity
   ```math
   \cos^2\left(\frac{\theta}{2}\right) + \sin^2\left(\frac{\theta}{2}\right) = 1
-  ```
+  ```  
   guarantees that the state is normalized without extra effort.
 
 - **Encoding the Relative Phase:**  
