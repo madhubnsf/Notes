@@ -58,10 +58,12 @@ we ensure:
     The outcomes of many quantum processes—like interference in a quantum circuit, entanglement, or even simple measurement probabilities—depend entirely on the difference in phase between the two components, not on their overall phase.
   - **State Distinction:**  
     Consider two states:
-    ```math
-    \frac{|0\rangle + |1\rangle}{\sqrt{2}} \quad \text{and} \quad \frac{|0\rangle - |1\rangle}{\sqrt{2}}.
-    ```
-    They have the same probability amplitudes (i.e., equal absolute values) for being in \($|0\rangle\)$ or \($|1\rangle\)$, yet they lead to very different behaviors in interference experiments because the relative phase (0 vs. π) between the two components is different.
+    
+```math
+\frac{|0\rangle + |1\rangle}{\sqrt{2}} \quad \text{and} \quad \frac{|0\rangle - |1\rangle}{\sqrt{2}}.
+```
+
+   They have the same probability amplitudes (i.e., equal absolute values) for being in \($|0\rangle\)$ or \($|1\rangle\)$, yet they lead to very different behaviors in interference experiments because the relative phase (0 vs. π) between the two components is different.
   - **Geometric Interpretation:**  
     On the Bloch sphere, changing φ rotates the point around the z-axis. This rotation reflects the variation in the relative phase without changing the probability of obtaining \($|0\rangle\)$ or \($|1\rangle\)$ (which depends only on θ), but it does affect the way the state interferes with others.
 
