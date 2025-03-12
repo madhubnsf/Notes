@@ -10,8 +10,8 @@ A qubit’s state can be written in its most general form as:
 ```
 where:
 
-- \($\theta\) $ is the *polar angle* (ranging from 0 to \($\pi\) $) ,
-- \($\phi\) $ is the *azimuthal angle* (ranging from 0 to \($2\pi\) $) .
+- \($\theta$\) is the *polar angle* (ranging from 0 to \($\pi\) $) ,
+- \($\phi$\) is the *azimuthal angle* (ranging from 0 to \($2\pi\) $) .
 
 **Interpretation:**
 
