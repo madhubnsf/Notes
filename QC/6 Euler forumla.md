@@ -59,7 +59,7 @@ This combination of conceptual clarity and mathematical elegance is why the qubi
    Euler’s formula states that for any real number \($\phi\)$,  
 
    ```math
-   e^{i\phi} = \cos \phi + i \sin\phi.
+   e^{i\phi} = \cos \phi + i \sin\phi
    ```
 
    This formula is a foundational result in complex analysis. It provides a compact and elegant way to express any point on the unit circle in the complex plane using the angle \($\phi\)$.
@@ -71,7 +71,7 @@ This combination of conceptual clarity and mathematical elegance is why the qubi
    In the expression for a qubit,
 
    ```math
-   |\psi\rangle = \cos\left(\frac{\theta}{2}\right)|0\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|1\rangle,
+   |\psi\rangle = \cos\left(\frac{\theta}{2}\right)|0\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|1\rangle
    ```
 
    the term \($e^{i\phi}\)$ assigns a relative phase to the \($|1\rangle\)$ state. This phase is critical for understanding interference and other quantum phenomena. The use of \($e^{i\phi}\)$ is simply a concise way to capture this phase information—thanks directly to Euler’s formula.
