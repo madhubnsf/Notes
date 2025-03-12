@@ -58,9 +58,9 @@ This combination of conceptual clarity and mathematical elegance is why the qubi
 1. **Euler’s Formula:**  
    Euler’s formula states that for any real number \($\phi\)$,  
 
-   ```math
-   e^{i\phi} = \cos \phi + i \sin\phi
-   ```
+  ```math
+  e^{i\phi} = \cos\phi + i\sin\phi
+  ```
 
    This formula is a foundational result in complex analysis. It provides a compact and elegant way to express any point on the unit circle in the complex plane using the angle \($\phi\)$.
 
