@@ -70,9 +70,9 @@ This combination of conceptual clarity and mathematical elegance is why the qubi
 3. **Relative Phase Representation:**  
    In the expression for a qubit,
 
-   ```math
-   |\psi\rangle = \cos\left(\frac{\theta}{2}\right)|0\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|1\rangle
-   ```
+  ```math
+  |\psi\rangle = \cos\left(\frac{\theta}{2}\right) |0\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|1\rangle,
+  ```
 
    the term \($e^{i\phi}\)$ assigns a relative phase to the \($|1\rangle\)$ state. This phase is critical for understanding interference and other quantum phenomena. The use of \($e^{i\phi}\)$ is simply a concise way to capture this phase information—thanks directly to Euler’s formula.
 
