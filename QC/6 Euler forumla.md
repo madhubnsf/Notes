@@ -6,7 +6,7 @@ At the heart of quantum mechanics lies the need to describe states as complex ve
 e^{i\phi} = \cos \phi + i \sin\phi.
 ```
 
-This representation offers a compact way to capture both the magnitude and the phase of a complex number. For a normalized number (one with magnitude 1), the entire content is in the phase \(\phi\). Since the relative phase is the quantity that matters in quantum mechanics, \(e^{i\phi}\) becomes the natural choice.
+This representation offers a compact way to capture both the magnitude and the phase of a complex number. For a normalized number (one with magnitude 1), the entire content is in the phase \(\phi\). Since the relative phase is the quantity that matters in quantum mechanics, $\(e^{i\phi}\) becomes the natural choice.
 
 ---
 
