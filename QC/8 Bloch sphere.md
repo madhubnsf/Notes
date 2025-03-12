@@ -226,9 +226,9 @@ yielding
 **So why cosine and sine?**
 
 - **Normalization Made Easy:** Notice that by using cosine and sine, we automatically meet the requirement:  
-  ```math
-  \cos^2\left(\frac{\theta}{2}\right)  + \sin^2\left(\frac{\theta}{2}\right)  = 1.
-  ```
+```math
+\cos^2\left(\frac{\theta}{2}\right)  + \sin^2\left(\frac{\theta}{2}\right)  = 1.
+```
   This mirrors the classic trigonometric identity for angles on a unit circle, where every point has coordinates defined by cosine and sine. 
 
 - **Mapping to a Sphere:** In the Bloch sphere representation, a qubit’s state is visualized as a point on the surface of a unit sphere. In this geometric picture, \($\theta$\) and \($\phi$\) become the spherical coordinate angles—\($\theta$\) (the polar angle)  and \($\phi$\) (the azimuthal angle) . The use of cosine and sine is simply analogous to how we parameterize points on a circle or sphere in classical geometry.
