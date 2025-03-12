@@ -83,7 +83,7 @@ This combination of conceptual clarity and mathematical elegance is why the qubi
 
 ### In Summary
 
-The use of \($ e^{i\phi} \)$ arises because Euler’s formula:
+The use of \($e^{i\phi}\)$ arises because Euler’s formula:
 
 ```math
 e^{i\phi} = \cos\phi + i\sin\phi
