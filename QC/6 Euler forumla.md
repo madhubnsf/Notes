@@ -56,7 +56,7 @@ This combination of conceptual clarity and mathematical elegance is why the qubi
 ---
 
 1. **Euler’s Formula:**  
-   Euler’s formula states that for any real number \($\phi\)$,
+   Euler’s formula states that for any real number \($\phi\)$, below, 
 
    ```math
    e^{i\phi} = \cos\phi + i\sin\phi.
