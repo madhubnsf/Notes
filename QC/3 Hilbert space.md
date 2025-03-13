@@ -142,9 +142,9 @@ That's a great question, Madhu! The link between qubits as **linear complex vect
 ### 1. **Quantum States are Abstract**
 Physically, particles like electrons or photons exist in the real world, but quantum mechanics describes their behavior in an abstract way using **state vectors**. These state vectors belong to a **Hilbert space**, which is a mathematical space where states are represented as linear combinations (superpositions) of basis vectors. For qubits, this Hilbert space is two-dimensional.
 
-For example, the two basis states \( $ \lvert 0 \rangle $ \) and \( $ \lvert 1 \rangle $ \) might correspond to:
-- The spin of an electron (spin-up \( $ \lvert 0 \rangle $ \), spin-down \( $ \lvert 1 \rangle $ \)).
-- The polarization of a photon (horizontal \( $ \lvert 0 \rangle $ \), vertical \( $ \lvert 1 \rangle $ \)).
+For example, the two basis states \( $\lvert 0 \rangle$ \) and \( $\lvert 1 \rangle$ \) might correspond to:
+- The spin of an electron (spin-up \( $\lvert 0 \rangle$ \), spin-down \( $\lvert 1 \rangle$ \)).
+- The polarization of a photon (horizontal \( $\lvert 0 \rangle$ \), vertical \( $\lvert 1 \rangle$ \)).
 
 ### 2. **Superposition and Linearity**
 A key principle of quantum mechanics is **superposition**: a quantum system can exist simultaneously in a combination of its basis states. For a qubit, this means the general state can be written as:
