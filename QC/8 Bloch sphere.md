@@ -305,7 +305,7 @@ The Bloch sphere is a fascinating representation of qubit states! To address you
   ```math
   \lvert \psi \rangle = \cos\left(\frac{\pi}{8}\right) \lvert 0 \rangle + e^{i\phi} \sin\left(\frac{\pi}{8}\right) \lvert 1 \rangle
   ```
-     where \( $\phi$ \) varies.
+   where \( $\phi$ \) varies.
 
 3. **Assigning qubits to 8 quadrants:**
    - Divide the sphere into 8 equal quadrants by splitting the ranges of \( $\phi$ \) and the \( $x, y, z$ \)-axes.
