@@ -302,7 +302,9 @@ The Bloch sphere is a fascinating representation of qubit states! To address you
 2. **Condition for the angle \( $45^\circ$ \) with the \( $z$ \)-axis:**
    - The angle \( $\theta = \frac{\pi}{4}$ \) (in radians, 45° in degrees).
    - For this angle, the general state on the Bloch sphere can be expressed as:
-     $$ \lvert \psi \rangle = \cos\left(\frac{\pi}{8}\right) \lvert 0 \rangle + e^{i\phi} \sin\left(\frac{\pi}{8}\right) \lvert 1 \rangle, $$
+  ```math
+  \lvert \psi \rangle = \cos\left(\frac{\pi}{8}\right) \lvert 0 \rangle + e^{i\phi} \sin\left(\frac{\pi}{8}\right) \lvert 1 \rangle
+  ```
      where \( $\phi$ \) varies.
 
 3. **Assigning qubits to 8 quadrants:**
