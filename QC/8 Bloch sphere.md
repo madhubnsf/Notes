@@ -323,4 +323,160 @@ The Bloch sphere is a fascinating representation of qubit states! To address you
 ```
    where \( $\phi_k$ \) is the specific angle for that quadrant, taking into account the angular ranges for \( $\phi$ \) and the octants.
 
-If you'd like, I can further help plot this or dive into practical applications of these states!
+---
+
+#### Upper hemisphere qubits
+
+The quantum states you described on the Bloch sphere can be represented in matrix form. Let's construct the state vectors for the qubits that lie at \( $\theta = 45^\circ (\frac{\pi}{4})$ \) with the \( $z$ \)-axis in each quadrant of the Bloch sphere.
+
+### General Pure State
+The general state of a qubit at \( $\theta = \frac{\pi}{4}$ \) (45°) can be written as:
+```math
+\lvert \psi \rangle = \cos\left(\frac{\pi}{8}\right) \lvert 0 \rangle + e^{i\phi} \sin\left(\frac{\pi}{8}\right) \lvert 1 \rangle.
+```
+In matrix form:
+```math
+\lvert \psi \rangle =
+\begin{bmatrix}
+\cos\left(\frac{\pi}{8}\right) \\
+e^{i\phi} \sin\left(\frac{\pi}{8}\right)
+\end{bmatrix}.
+```
+
+### Finding Matrices for Each Quadrant
+To specify the states in each quadrant, we need unique values of \( $\phi$ \) within the ranges corresponding to each quadrant. Here are the resulting matrices:
+
+1. **Quadrant 1** (\( $0 \leq \phi < \frac{\pi}{2}$ \)):
+```math
+\lvert \psi_1 \rangle =
+\begin{bmatrix}
+\cos\left(\frac{\pi}{8}\right) \\
+e^{i\cdot 0} \sin\left(\frac{\pi}{8}\right)
+\end{bmatrix}.
+=
+\begin{bmatrix}
+\cos\left(\frac{\pi}{8}\right) \\
+\sin\left(\frac{\pi}{8}\right)
+\end{bmatrix}.
+```
+
+2. **Quadrant 2** (\( $\frac{\pi}{2} \leq \phi < \pi$ \)):
+```math
+\lvert \psi_2 \rangle =
+\begin{bmatrix}
+\cos\left(\frac{\pi}{8}\right) \\
+e^{i\frac{\pi}{2}} \sin\left(\frac{\pi}{8}\right)
+\end{bmatrix}.
+=
+\begin{bmatrix}
+\cos\left(\frac{\pi}{8}\right) \\
+i \sin\left(\frac{\pi}{8}\right)
+\end{bmatrix}.
+```
+
+3. **Quadrant 3** (\( $\pi \leq \phi < \frac{3\pi}{2}$ \)):
+```math
+\lvert \psi_3 \rangle =
+\begin{bmatrix}
+\cos\left(\frac{\pi}{8}\right) \\
+e^{i\pi} \sin\left(\frac{\pi}{8}\right)
+\end{bmatrix}.
+=
+\begin{bmatrix}
+\cos\left(\frac{\pi}{8}\right) \\
+-\sin\left(\frac{\pi}{8}\right)
+\end{bmatrix}.
+```
+
+4. **Quadrant 4** (\( $\frac{3\pi}{2} \leq \phi < 2\pi$ \)):
+```math
+\lvert \psi_4 \rangle =
+\begin{bmatrix}
+\cos\left(\frac{\pi}{8}\right) \\
+e^{i\frac{3\pi}{2}} \sin\left(\frac{\pi}{8}\right)
+\end{bmatrix}.
+=
+\begin{bmatrix}
+\cos\left(\frac{\pi}{8}\right) \\
+-i \sin\left(\frac{\pi}{8}\right)
+\end{bmatrix}.
+```
+
+For the 8 divisions (octants), we can further subdivide these states by assigning ranges of \( $\phi$ \) and adjust the phase accordingly.
+
+#### Lower hemisphere qubits 
+
+To find the states in the **lower hemisphere** of the Bloch sphere corresponding to \( $\theta = \frac{3\pi}{4}$ \) (135°, which places the qubits below the equator), we will use the same approach as before but with this new angle. The general formula for the state vector remains the same.
+
+### General Pure State in the Lower Hemisphere
+For \( $\theta = \frac{3\pi}{4}$ \), the general qubit state becomes:
+```math
+\lvert \psi \rangle = \cos\left(\frac{3\pi}{8}\right) \lvert 0 \rangle + e^{i\phi} \sin\left(\frac{3\pi}{8}\right) \lvert 1 \rangle.
+```
+
+Now, let's find specific states in the 4 quadrants of the lower hemisphere:
+
+---
+
+1. **Quadrant 5** (Corresponding to \( $0 \leq \phi < \frac{\pi}{2}$ \)):
+```math
+\lvert \psi_5 \rangle =
+\begin{bmatrix}
+\cos\left(\frac{3\pi}{8}\right) \\
+e^{i\cdot 0} \sin\left(\frac{3\pi}{8}\right)
+\end{bmatrix}
+=
+\begin{bmatrix}
+\cos\left(\frac{3\pi}{8}\right) \\
+\sin\left(\frac{3\pi}{8}\right)
+\end{bmatrix}.
+```
+
+2. **Quadrant 6** (Corresponding to \( $\frac{\pi}{2} \leq \phi < \pi$ \)):
+```math
+\lvert \psi_6 \rangle =
+\begin{bmatrix}
+\cos\left(\frac{3\pi}{8}\right) \\
+e^{i\frac{\pi}{2}} \sin\left(\frac{3\pi}{8}\right)
+\end{bmatrix}
+=
+\begin{bmatrix}
+\cos\left(\frac{3\pi}{8}\right) \\
+i\sin\left(\frac{3\pi}{8}\right)
+\end{bmatrix}.
+```
+
+3. **Quadrant 7** (Corresponding to \( $\pi \leq \phi < \frac{3\pi}{2}$ \)):
+```math
+\lvert \psi_7 \rangle =
+\begin{bmatrix}
+\cos\left(\frac{3\pi}{8}\right) \\
+e^{i\pi} \sin\left(\frac{3\pi}{8}\right)
+\end{bmatrix}
+=
+\begin{bmatrix}
+\cos\left(\frac{3\pi}{8}\right) \\
+-\sin\left(\frac{3\pi}{8}\right)
+\end{bmatrix}.
+```
+
+4. **Quadrant 8** (Corresponding to \( $\frac{3\pi}{2} \leq \phi < 2\pi$ \)):
+```math
+\lvert \psi_8 \rangle =
+\begin{bmatrix}
+\cos\left(\frac{3\pi}{8}\right) \\
+e^{i\frac{3\pi}{2}} \sin\left(\frac{3\pi}{8}\right)
+\end{bmatrix}
+=
+\begin{bmatrix}
+\cos\left(\frac{3\pi}{8}\right) \\
+-i\sin\left(\frac{3\pi}{8}\right)
+\end{bmatrix}.
+```
+
+---
+
+### Recap
+- The 4 states derived above correspond to the **lower hemisphere**, complementing the 4 states in the **upper hemisphere**.
+- Together, these 8 states span the Bloch sphere at \( $\theta = \frac{\pi}{4}$ \) (upper) and \( $\theta = \frac{3\pi}{4}$ \) (lower), each at distinct quadrants defined by \( $\phi$ \).
+
