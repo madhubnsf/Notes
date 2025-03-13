@@ -151,9 +151,9 @@ A key principle of quantum mechanics is **superposition**: a quantum system can 
 ```math
 \lvert \psi \rangle = \alpha \lvert 0 \rangle + \beta \lvert 1 \rangle,
 ```
-where \( $ \alpha $ \) and \( $ \beta $ \) are complex numbers. This linear combination reflects the probabilistic nature of quantum systems:
-- \( $ |\alpha|^2 $ \): Probability of measuring \( $ \lvert 0 \rangle $ \).
-- \( $ |\beta|^2 $ \): Probability of measuring \( $ \lvert 1 \rangle $ \).
+where \( $\alpha$ \) and \( $\beta$ \) are complex numbers. This linear combination reflects the probabilistic nature of quantum systems:
+- \( $|\alpha|^2$ \): Probability of measuring \( $\lvert 0 \rangle$ \).
+- \( $|\beta|^2$ \): Probability of measuring \( $\lvert 1 \rangle$ \).
 
 ### 3. **Why Complex Numbers?**
 The use of complex numbers arises from the mathematical structure of quantum mechanics:
