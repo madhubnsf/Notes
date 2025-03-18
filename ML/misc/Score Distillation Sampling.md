@@ -24,7 +24,7 @@ By leveraging the pretrained diffusion model as a fixed, differentiable “oracl
 
 ### 2.1 Diffusion Models and Score Matching
 
-In diffusion models one typically defines a forward process that progressively corrupts an image \( $ \mathbf{I}_0 $ \) into a noisy image \( $\mathbf{I}_t$ \) at time \( $t$ \) using a known noise schedule. A common reparameterization is:
+In diffusion models one typically defines a forward process that progressively corrupts an image \( $\mathbf{I}_0$ \) into a noisy image \( $\mathbf{I}_t$ \) at time \( $t$ \) using a known noise schedule. A common reparameterization is:
 ```math
 \mathbf{I}_t = \sqrt{\bar{\alpha}_t}\,\mathbf{I}_0 + \sqrt{1-\bar{\alpha}_t}\,\boldsymbol{\epsilon}, \quad \boldsymbol{\epsilon} \sim \mathcal{N}(0,\mathbf{I})
 ```
@@ -32,7 +32,7 @@ where
 - \( $\bar{\alpha}_t$ \) is a cumulative noise coefficient (depending on the schedule), and  
 - \( $\boldsymbol{\epsilon}$ \) is drawn from a standard Gaussian distribution.
 
-The diffusion (denoising) network \( $ \epsilon_\theta(\cdot) $ \) is trained to predict the noise \( $\boldsymbol{\epsilon}$ \) given the noisy image \( $\mathbf{I}_t$ \), time \( $t$ \), and optionally, conditioning signal \( $\mathbf{y}$ \). Its training loss is typically:
+The diffusion (denoising) network \( $\epsilon_\theta(\cdot)$ \) is trained to predict the noise \( $\boldsymbol{\epsilon}$ \) given the noisy image \( $\mathbf{I}_t$ \), time \( $t$ \), and optionally, conditioning signal \( $\mathbf{y}$ \). Its training loss is typically:
 ```math
 \mathcal{L}_{\text{diff}} = \mathbb{E}_{t,\mathbf{I}_0,\boldsymbol{\epsilon}}\Bigl[\lambda(t)\,\bigl\|\epsilon_\theta\bigl(\mathbf{I}_t,t,\mathbf{y}\bigr)-\boldsymbol{\epsilon}\bigr\|^2\Bigr],
 ```
