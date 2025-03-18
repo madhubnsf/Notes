@@ -60,28 +60,28 @@ When applying SDS to a 3D model, the overall goal is to adjust the 3D parameters
 
 3. **Create a Noisy Version of the Rendered Image:**  
    Form the noised image
-   ```math
-   \mathbf{I}_t = \sqrt{\bar{\alpha}_t}\,\mathbf{I} + \sqrt{1-\bar{\alpha}_t}\,\boldsymbol{\epsilon}.
-   ```
+```math
+\mathbf{I}_t = \sqrt{\bar{\alpha}_t}\,\mathbf{I} + \sqrt{1-\bar{\alpha}_t}\,\boldsymbol{\epsilon}.
+```
 
 4. **Obtain the Diffusion Model’s Prediction:**  
    Feed \( $\mathbf{I}_t$ \), \( $t$ \), and text prompt \( $\mathbf{y}$ \) into the pretrained diffusion network:
-   ```math
-   \hat{\boldsymbol{\epsilon}} = \epsilon_\theta\bigl(\mathbf{I}_t,t,\mathbf{y}\bigr).
-   ```
+```math
+\hat{\boldsymbol{\epsilon}} = \epsilon_\theta\bigl(\mathbf{I}_t,t,\mathbf{y}\bigr).
+```
 
 5. **Compute the SDS Loss:**  
    The loss is computed as the weighted squared error between the diffusion model’s predicted noise and the actual noise:
-   ```math
-   \mathcal{L}_{\text{SDS}} = w(t) \,\bigl\|\hat{\boldsymbol{\epsilon}} - \boldsymbol{\epsilon}\bigr\|^2,
-   ```
+```math
+\mathcal{L}_{\text{SDS}} = w(t) \,\bigl\|\hat{\boldsymbol{\epsilon}} - \boldsymbol{\epsilon}\bigr\|^2,
+```
    where \( $w(t)$ \) is a weight derived from the noise level (for example, proportional to \( $1/\sqrt{1-\bar{\alpha}_t}$ \) or adapted to ensure proper scaling).
 
 6. **Backpropagate via the Rendering Pipeline:**  
    Since the rendered image \( $\mathbf{I}$ \) is differentiable with respect to the 3D model’s parameters, the gradient of \( $\mathcal{L}_{\text{SDS}}$ \) can be chained back:
-   ```math
-   \frac{\partial \mathcal{L}_{\text{SDS}}}{\partial \theta} = \frac{\partial \mathcal{L}_{\text{SDS}}}{\partial \mathbf{I}} \cdot \frac{\partial \mathbf{I}}{\partial \theta}.
-   ```
+```math
+\frac{\partial \mathcal{L}_{\text{SDS}}}{\partial \theta} = \frac{\partial \mathcal{L}_{\text{SDS}}}{\partial \mathbf{I}} \cdot \frac{\partial \mathbf{I}}{\partial \theta}.
+```
    This gradient update nudges the 3D scene so that, when rendered, its images become more “in line” with what the diffusion model considers likely for the given text prompt.
 
 ---
@@ -93,9 +93,9 @@ When applying SDS to a 3D model, the overall goal is to adjust the 3D parameters
 
 - **Gradient Signal Through the Score:**  
   The term \( $\hat{\boldsymbol{\epsilon}} - \boldsymbol{\epsilon}$ \) forms an proxy for the score:
-  ```math
-  \nabla_{\mathbf{I}} \log p(\mathbf{I}\mid \mathbf{y}) \approx -\frac{1}{\sqrt{1-\bar{\alpha}_t}}\left(\hat{\boldsymbol{\epsilon}} - \boldsymbol{\epsilon}\right).
-  ```
+```math
+\nabla_{\mathbf{I}} \log p(\mathbf{I}\mid \mathbf{y}) \approx -\frac{1}{\sqrt{1-\bar{\alpha}_t}}\left(\hat{\boldsymbol{\epsilon}} - \boldsymbol{\epsilon}\right).
+```
   This means the 3D model is updated in the direction that increases the log probability of its renderings under the diffusion model.
 
 - **Weighting by Noise Level:**  
@@ -151,9 +151,9 @@ Below is an ASCII diagram that outlines the SDS process:
 - The process begins by rendering an image from the 3D model, corrupting it with a known noise level, and then passing it through the diffusion model.
 - The difference between the predicted noise and the actual injected noise acts as a proxy for the gradient of the log-likelihood, which is then used to update the 3D model.
 - Mathematically, SDS is summarized by a loss term of the form
-  ```math
-  \mathcal{L}_{\text{SDS}} = w(t)\,\bigl\|\epsilon_\theta\bigl(\mathbf{I}_t,t,\mathbf{y}\bigr) - \boldsymbol{\epsilon}\bigr\|^2,
-  ```
+```math
+\mathcal{L}_{\text{SDS}} = w(t)\,\bigl\|\epsilon_\theta\bigl(\mathbf{I}_t,t,\mathbf{y}\bigr) - \boldsymbol{\epsilon}\bigr\|^2,
+```
   with gradients flowing via the rendering process back to the 3D parameters.
 
 This technique elegantly distills 2D image priors into a 3D representation and has proven to be a powerful tool for tasks such as text-to-3D synthesis.
